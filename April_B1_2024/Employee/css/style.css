@@ -1,0 +1,52 @@
+body{
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    padding-top: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    color: whitesmoke;
+}
+.container{
+    text-align:center;
+    background-color: aliceblue;
+    margin-left:440px;
+    padding-top: 30px;
+    width:650px;
+    height: 600px;
+    border-radius: 10px;
+    
+}
+.input1{
+    width:480px;
+    height:40px;
+    border: solid 1 px hwb(0 96% 4%);
+    border-radius: 15px;
+    padding-left: 10px;
+}
+.input2{
+    width:495px;
+    height:40px;
+    border: solid 1 px hwb(0 96% 4%);
+    border-radius: 15px;
+    padding-left: 10px;
+}  
+.button{
+    color: rgb(85, 48, 234);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    background-color:whitesmoke;
+    width: 300px;
+    height:40px;
+    border: solid 1 px whitesmoke;
+    border-radius: 15px;
+} 
+button:hover{
+    background-color:rgb(172, 195, 215);
+}
+    
+
+
+
+

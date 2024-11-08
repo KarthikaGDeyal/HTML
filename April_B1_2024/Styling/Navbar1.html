@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <ul>
+            <li><a href="Navbar.html" class="active">Home</a></li>
+            <li><a href="">About us</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Courses</a></li>
+            <li><a href="">Contact us</a></li>
+
+        </ul>
+        <style>
+            ul{
+                list-style-type:none;
+                margin:0;
+                padding:0;
+                width: 300px;
+                background-color: antiquewhite;
+            }
+            li a{
+                color:black;
+                display:block;
+                padding:10px 15px;
+                text-decoration: none;
+            }
+            li a:hover{
+                background-color: rgb(147, 65, 223);
+                color:white;
+            }
+            li a.active{
+                background-color: rgb(76, 9, 139);
+                color:white;
+            }
+            li a:hover:not(.active){
+                background-color: rgb(128, 116, 116);
+                color:white;
+            }
+        </style>
+    </div>
+</body>
+</html>

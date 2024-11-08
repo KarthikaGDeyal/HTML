@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="About.html" class="active">About us</a></li>
+        <li><a href="">Services</a></li>
+        <li><a href="">Courses</a></li>
+        <li><a href="">Contact us</a></li>
+
+    </ul>
+    <h1>Home Page</h1>
+    <style>
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding:0;
+            overflow:hidden;
+            background-color: rgb(13, 13, 13);
+            
+        }
+        li{
+            display:inline;
+            float:left;
+            
+            
+        }
+        li a{
+            display:block;
+            padding:15px 20px;
+            color:white;
+            text-decoration: none;
+        }
+        li a:hover{
+            background-color: white;
+            color:black;
+        }
+        li a.active{
+                background-color:whitesmoke;
+                color:black;
+            }
+        li a:hover:not(.active){
+                background-color: rgb(81, 80, 78);
+                color:white;
+        }
+    </style>
+</body>
+</html>

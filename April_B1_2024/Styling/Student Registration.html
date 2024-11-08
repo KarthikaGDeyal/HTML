@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            
+            margin: 0;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+
+            background-color: white;
+            margin-top: 300px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            width: 100%;
+            text-align: left;
+        }
+        h1 {
+            color: blueviolet;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        form label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="file"] {
+            padding: 3px;
+        }
+        .radio-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        .radio-group input[type="radio"] {
+            margin-right: 5px;
+        }
+        .radio-group label {
+            margin-right: 20px;
+            margin-bottom: 0;
+            font-weight: normal;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: blueviolet;
+            color: white;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: darkviolet;
+        }
+    </style>
+</head>
+<body><br>
+    <div class="container">
+        <h1>Student Registration Details</h1>
+        <form action="#">
+            <label for="profileImage">Upload your Profile Image:</label>
+            <input type="file" name="profileImage" id="profileImage"><br>
+
+            <label for="name">Enter your name:</label>
+            <input type="text" name="name" id="name" placeholder="Name"><br>
+
+            <label for="age">Enter your age:</label>
+            <input type="text" name="age" id="age" placeholder="Age"><br>
+
+            <label>Select Your Gender:</label>
+            <div class="radio-group">
+                <input type="radio" name="gender" id="male" value="male">
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="female" value="female">
+                <label for="female">Female</label>
+                <input type="radio" name="gender" id="others" value="others">
+                <label for="others">Others</label>
+            </div>
+
+            <label for="mobile">Enter your mobile no:</label>
+            <div style="display: flex; align-items: center;">
+                <select name="countryCode" id="countryCode" style="width: auto; margin-right: 10px;">
+                    <option value="+91">+91</option>
+                </select>
+                <input type="tel" name="mobile" id="mobile" pattern="[0-9]{3}-[0-9]{5}" placeholder="123-12345">
+            </div><br>
+
+            <label for="college">Select your College:</label>
+            <select name="college" id="college">
+                <option value="Select your College">Select your College</option>
+                <option value="CEC">CEC</option>
+                <option value="MEC">MEC</option>
+                <option value="CET">CET</option>
+            </select><br>
+
+            <label for="course">Select your Course:</label>
+            <select name="course" id="course">
+                <option value="Select your Course">Select your Course</option>
+                <option value="CS">CS</option>
+                <option value="EC">EC</option>
+                <option value="EEE">EEE</option>
+            </select><br>
+
+            <label for="address">Enter your address:</label>
+            <textarea name="address" id="address" placeholder="Address"></textarea><br>
+
+            <label for="username">Enter Username:</label>
+            <input type="text" name="username" id="username" placeholder="Username"><br>
+
+            <label for="password">Enter Password:</label>
+            <input type="password" name="password" id="password" placeholder="Password"><br>
+
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirm Password"><br>
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+</body>
+</html>
